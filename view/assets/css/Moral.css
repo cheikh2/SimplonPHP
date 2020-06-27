@@ -1,0 +1,113 @@
+
+.salaire {
+	position: relative;
+	left: 40px;
+	top: 45px;
+	line-height: 30px;
+	border-radius: 6px;
+	padding: 0 40px;
+	font-size: 16px;
+	color: #555;
+}
+.nomEmpl {
+	position: relative;
+	left: 40px;
+	top: 65px;
+	line-height: 30px;
+	border-radius: 6px;
+	padding: 0 40px;
+	font-size: 16px;
+	color: #555;
+}
+
+.ninea {
+	position: relative;
+	left: 40px;
+	top: 85px;
+	line-height: 30px;
+	border-radius: 6px;
+	padding: 0 40px;
+	font-size: 16px;
+	color: #555;
+}
+
+.rc {
+	position: relative;
+	left: 400px;
+	top: -58px;
+	line-height: 30px;
+	border-radius: 6px;
+	padding: 0 40px;
+	font-size: 16px;
+	color: #555;
+}
+
+.raisonSocial{
+    position: relative;
+	left: 400px;
+	top: -38px;
+	line-height: 30px;
+	border-radius: 6px;
+	padding: 0 40px;
+	font-size: 16px;
+	color: #555;
+}
+
+.adressEmpl{
+    position: relative;
+	left: 400px;
+	top: -38px;
+	line-height: 30px;
+	border-radius: 6px;
+	padding: 0 40px;
+	font-size: 16px;
+	color: #555;
+}
+
+.butt{
+	position: relative;
+	left: 500px;
+	top: 10px;
+	border-radius: 16px;
+  }
+  
+  .button{
+	position: relative;
+	background-color: #3BAF9F;
+	display: block;
+	margin: 20px 0px 0px 20px;
+	text-align: center;
+	left: -430px;
+	border-radius: 12px;
+	border: 2px solid #336473;
+	padding: 14px 100px;
+	outline: none;
+	color: white;
+	cursor: pointer;
+	transition: 0.25px;
+	top: -30px;
+  }
+  
+  .button:hover {
+	background-color: #5390F5;
+  }
+  
+  .btn {
+	position: relative;
+	background-color: #e6e9e850;
+	display: block;
+	margin: 20px 0px 0px 20px;
+	top: -100px;
+	border-radius: 12px;
+	border: 2px solid #336473;
+	padding: 14px 100px;
+	outline: none;
+	color: white;
+	cursor: pointer;
+	transition: 0.25px;
+	left: -80px;
+  }
+  
+  .btn:hover {
+	background-color: #607407;
+  }

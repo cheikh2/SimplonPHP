@@ -7,7 +7,7 @@ ini_set('display_errors', 1);
 
 class Physique{
     private $idPhysique, $prenom, $nom;
-    private $adress, $email, $telephone, $sexe, $profession, $cni, $idEmployeur;
+    private $adress, $email, $telephone, $sexe, $profession, $cni, $salaire, $idEmployeur;
   
 
     //function de constructeur
@@ -36,6 +36,7 @@ class Physique{
  public function getSexe(){ return $this->sexe;}
  public function getProfession(){ return $this->profession;}
  public function getCni(){ return $this->cni;}
+ public function getSalaire(){ return $this->salaire;}
  public function getIdEmployeur(){ return $this->idEmployeur;}
 
 // the setters ou mutateur
@@ -48,5 +49,6 @@ public function setTelephone($telephone){$this->telephone=$telephone;}
 public function setSexe($sexe){$this->sexe=$sexe;}
 public function setProfession($profession){$this->profession=$profession;}
 public function setCni($cni){$this->cni=$cni;}
+public function setSalaire($salaire){$this->salaire=$salaire;}
 public function setIdEmployeur($idEmployeur){$this->idEmployeur=$idEmployeur;}
 }

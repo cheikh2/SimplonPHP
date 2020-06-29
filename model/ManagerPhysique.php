@@ -5,8 +5,8 @@
 #######*********                               *********##########
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-require_once '../model/Manager.php';
-require_once '../model/Config.php';
+require_once 'Manager.php';
+require_once 'Config.php';
 
 class ManagerPhysique extends Manager{
 
@@ -24,6 +24,7 @@ class ManagerPhysique extends Manager{
         $physique->getSexe(),
         $physique->getProfession(),
         $physique->getCni(),
+        $moral->getSalaire (),
         $physique->getIdEmployeur()
         ));
 
@@ -35,6 +36,11 @@ class ManagerPhysique extends Manager{
     }
 
 
+    //function de liste de tabeau des clients physiques
+public function ListePhysique(){
+    $req=self::FindAll("SELECT * FROM Physique");
+    return $req;
+}
 }
 
 

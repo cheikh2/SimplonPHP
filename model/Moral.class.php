@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 class Moral{
-    private $idMoral, $salaire, $nomEmpl;
+    private $idMoral, $nomEmpl;
     private $ninea, $rc, $raisonSocial, $adressEmpl;
   
 
@@ -28,7 +28,6 @@ class Moral{
 }
  // the getters ou accessur
  public function getIdMoral(){ return $this->idMoral;}
- public function getSalaire(){ return $this->salaire;}
  public function getNomEmpl(){ return $this->nomEmpl;}
  public function getNinea(){ return $this->ninea;}
  public function getRc(){ return $this->rc;}
@@ -37,7 +36,6 @@ class Moral{
 
 // the setters ou mutateur
 public function setIdMoral($idMoral){ $this->idMoral=$idMoral;}
-public function setSalaire($salaire){$this->salaire=$salaire;}
 public function setNomEmpl($nomEmpl){$this->nomEmpl=$nomEmpl;}
 public function setNinea($ninea){$this->ninea=$ninea;}
 public function setRc($rc){$this->rc=$rc;}

@@ -214,7 +214,19 @@
 	color: white;
 }
 
-.butt{
+
+.salaire {
+	position: relative;
+	left: 40px;
+	top: -205px;
+	line-height: 30px;
+	border-radius: 6px;
+	padding: 0 40px;
+	font-size: 16px;
+	color: #555;
+}
+
+/*.butt{
 	position: relative;
 	left: 500px;
 	top: 10px;
@@ -235,7 +247,7 @@
 	color: white;
 	cursor: pointer;
 	transition: 0.25px;
-	top: -70px;
+	top: -150px;
   }
   
   .button:hover {
@@ -247,7 +259,7 @@
 	background-color: #e6e9e850;
 	display: block;
 	margin: 20px 0px 0px 20px;
-	top: -140px;
+	top: -160px;
 	border-radius: 12px;
 	border: 2px solid #336473;
 	padding: 14px 100px;
@@ -260,4 +272,4 @@
   
   .btn:hover {
 	background-color: #607407;
-  }
+  }*/

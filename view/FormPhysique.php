@@ -29,20 +29,20 @@ require_once '../controller/AjoutPhysique.php';
 
             <span id="missNom"></span><br>
             <label for="nom"></label>
-            <input class="nom" type="text" name="nom" id="nom" class="form-control" placeholder="Nom du client" required>
+            <input class="nom" type="text" name="nom" id="nom" placeholder="Nom du client" required>
             <small> <b> <?php if(!empty($error['nom'])) echo $error['nom']?> </b> </small> 		
 
 
                 <span id="missAdress"></span><br>
                 <label for="adress"></label>
-                <input class="adress" type="text" name="adress" id="adress" class="form-control" placeholder="Adresse du client" required>
+                <input class="adress" type="text" name="adress" id="adress" placeholder="Adresse du client" required>
                 <small> <b> <?php if(!empty($error['adess'])) echo $error['adess']?> </b> </small> 		
 
 
 
                     <span id="missEmail"></span><br>
                     <label for="email"></label>
-                    <input class="email" type="email" name="email" id="email" class="form-control" placeholder="Email du client" required>
+                    <input class="email" type="email" name="email" id="email" placeholder="Email du client" required>
                     <small> <b> <?php if(!empty($error['email'])) echo $error['email']?> </b> </small> <br>
                     <small> <b> <?php if(!empty($error['mail'])) echo $error['mail']?> </b> </small> 
 
@@ -50,7 +50,7 @@ require_once '../controller/AjoutPhysique.php';
 
                         <span id="missTelephone"></span><br>
                         <label for="telephone"></label>
-                        <input class="telephone" type="text" name="telephone" id="telephone" class="form-control" placeholder="Telephone  du client" maxlength="9" minlength="9" required>
+                        <input class="telephone" type="text" name="telephone" id="telephone" placeholder="Telephone  du client" maxlength="9" minlength="9" required>
                         <small> <b> <?php if(!empty($error['tel'])) echo $error['tel']?> </b> </small> <br>
                         <small> <b> <?php if(!empty($error['optel'])) echo $error['optel']?> </b> </small> 
 
@@ -63,18 +63,34 @@ require_once '../controller/AjoutPhysique.php';
 
                                 <span id="missProfession"></span><br>
                                 <label for="profession"></label>
-                                <input class="profession" type="text" name="profession" id="profession" class="form-control" placeholder="Profession du client" required>
+                                <input class="profession" type="text" name="profession" id="profession" placeholder="Profession du client" required>
                                 <small> <b> <?php if(!empty($error['profession'])) echo $error['profession']?> </b> </small> 		
 
                                     <span id="missCni"></span><br>
                                     <label for="cni"></label>
-                                    <input class="cni" ype="text" name="cni" id="" class="form-control" placeholder="CIN du client" required>
+                                    <input class="cni" type="text" name="cni" id="" placeholder="CIN du client" required>
                                     <small> <b> <?php if(!empty($error['cni'])) echo $error['cni']?> </b> </small> 		
 
-                                        <span id="missCni"></span><br>
-                                        <label for="id"></label>
-                                        <input class="idEmployeur" type="text" name="idEmployeur" id="" class="form-control" placeholder="Id employeur">
-                                        <small> <b> <?php if(!empty($error['idemployeur'])) echo $error['idemployeur']?> </b> </small> 		
+                                        <span id="missSalaire"></span><br>
+				                                <label for="salairelab"></label>
+                                        <input class="salaire"  type="number" name="salaire" id="salaire"  placeholder="Salaire" required>
+                                        <small> <b> <?php if(!empty($error['salaire'])) echo $error['salaire']?> </b> </small> 
+
+                                        <div class="idEmployeur">
+                                            <label for="idempl"></label> 
+                                            <select type="text" name="idEmployeur" id="idEmployeur" required>
+	                                          <?php 
+                                            $man= new Manager();
+                                            $pdo= $man->getConnexion();
+                                            $req=$pdo->prepare("SELECT * FROM Moral");
+                                            $req->execute();
+                                            while($employeur=$req->fetch(PDO::FETCH_ASSOC)){;
+                                            ?>  
+                                            <option value="<?= $employeur['idEmployeur'] ?>"> <?= $employeur['nomEmpl'] ?> </option>
+                                            <?php }?>
+                                            </select>        
+                                        </div>                                     
+
                                   <div class="butt">
                                   <input class="button" type="submit" name="ajouter" class="btn btn-outline-info my-2 my-sm-0"  value="Ajouter" required>
                                   <input class="btn" type="reset" name="annuler" class="btn btn-outline-danger my-2 my-sm-0"  value="Annuler" required> 	

@@ -14,29 +14,30 @@ class ManagerCompte extends Manager{
 
 //function d'ajout d'un nouvvel client physique
 public function AddCompte(Compte $compte){
-      /*  $req=self::InsertUpdate("INSERT INTO Compte VALUES(?, ?, ?, ?, ?, ?, ? )", 
+        $req=self::InsertUpdate("INSERT INTO Compte VALUES(?, ?, ?, ?, ?, ?, ?, ?)", 
        array(
-        $moral->getIdMoral(), 
-        $moral->getSalaire (),
-        $moral->getNomEmpl(),
-        $moral->getNinea(),
-        $moral->getRc (),
-        $moral->getRaisonSocial(),
-        $moral->getAdressEmpl(),
+        $compte->getIdCompte(), 
+        $compte->getNumAgence(),
+        $compte->getNumCompte(),
+        $compte->getRib(),
+        $compte->getMontant(),
+        $compte->getDateDebut(),
+        $compte->getDateFin(),
+        $compte->getTypeCompte()
         ));
 
         if($req){
-            echo '<div class="alert alert-success">Client enregistré avec succés </div>';
+            echo '<div class="alert alert-success">Compte enregistré avec succés </div>';
         }else{
-            echo '<div class="alert alert-danger">Erreur d\'enregistrement du nouvel Client</div>';
+            echo '<div class="alert alert-danger">Erreur d\'enregistrement du nouvel Compte</div>';
         }
     }
 
-//function de liste de tabeau des Medecins
-public function ListeMoral(){
-    $req=self::FindAll("SELECT idEmployeur, salaire , nomEmpl , ninea , rc, raisonSocial, adressEmpl
-    FROM Moral");
-    return $req;*/
+//function de liste de tabeau des Compte
+public function ListeCompte(){
+    $req=self::FindAll("SELECT idCompte, numAgence , numCompte , TypeCompte , dateDebut, dateFin
+    FROM Compte");
+    return $req;
 }
 
 }

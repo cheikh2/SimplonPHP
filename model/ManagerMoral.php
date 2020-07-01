@@ -13,7 +13,7 @@ class ManagerMoral extends Manager{
 
 //function d'ajout d'un nouvvel client physique
 public function AddMoral(Moral $moral){
-        $req=self::InsertUpdate("INSERT INTO Moral VALUES(?, ?, ?, ?, ?, ?, ? )", 
+        $req=self::InsertUpdate("INSERT INTO Moral VALUES(?, ?, ?, ?, ?, ? )", 
        array(
         $moral->getIdMoral(), 
         $moral->getNomEmpl(),

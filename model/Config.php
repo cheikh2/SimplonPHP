@@ -10,5 +10,4 @@ ini_set('display_errors', 1);
     public static function params(){
         return array("localhost", "Gesbanque","cheikh", "Cheikh@mbow123", );
     }
-
 }

@@ -195,10 +195,10 @@
 .idEmployeur{
 	position: relative;
 	left: 400px;
-	top: -120px;
+	top: -70px;
 	line-height: 30px;
 	border-radius: 6px;
-	padding: 0 40px;
+	padding: 30 40px;
 	font-size: 16px;
 	color: #555;
 }
@@ -216,9 +216,9 @@
 
 
 .salaire {
-	position: relative;
-	left: 40px;
-	top: -205px;
+	position: absolute;
+	left: 900px;
+	top: 435px;
 	line-height: 30px;
 	border-radius: 6px;
 	padding: 0 40px;
@@ -226,7 +226,7 @@
 	color: #555;
 }
 
-/*.butt{
+.butt{
 	position: relative;
 	left: 500px;
 	top: 10px;
@@ -272,4 +272,4 @@
   
   .btn:hover {
 	background-color: #607407;
-  }*/
+  }

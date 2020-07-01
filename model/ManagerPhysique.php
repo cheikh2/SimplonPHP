@@ -13,7 +13,7 @@ class ManagerPhysique extends Manager{
 
 //function d'ajout d'un nouvvel client physique
  public function AddPhysique(Physique $physique){
-        $req=self::InsertUpdate("INSERT INTO Physique VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ? )", 
+        $req=self::InsertUpdate("INSERT INTO Physique VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )", 
        array(
         $physique->getIdPhysique(), 
         $physique->getPrenom(),
@@ -24,7 +24,7 @@ class ManagerPhysique extends Manager{
         $physique->getSexe(),
         $physique->getProfession(),
         $physique->getCni(),
-        $moral->getSalaire (),
+        $physique->getSalaire (),
         $physique->getIdEmployeur()
         ));
 

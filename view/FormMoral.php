@@ -5,11 +5,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-require_once '../model/ManagerMoral.php';
-require '../model/Moral.class.php';
 require_once '../view/header.php';
-
-$manager= new ManagerMoral();
 
 require_once '../controller/AjoutMoral.php';
 ?>

@@ -5,17 +5,13 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-require_once '../model/ManagerPhysique.php';
-require '../model/Physique.class.php';
 require_once '../view/header.php';
-
-$manager= new ManagerPhysique();
 
 require_once '../controller/AjoutPhysique.php';
 ?>
   <div class="compteform"><h1>CREATION DE CLIENT</h1></div>
     <div class="main">   
-  <form  action="" method="POST">	
+  <form  action="" method="POST" id="myform">	
   <div id="name">
 
     <h2 class="client" id="client">Infos_client</h2>
@@ -23,26 +19,26 @@ require_once '../controller/AjoutPhysique.php';
   
 	      <span id="missPrenom"></span><br>
 				<label for="prenomlab"></label>
-        <input class="prenom"  type="text" name="prenom" id="prenom"  placeholder="Prenom du client" required>
+        <input class="prenom"  type="text" name="prenom" id="prenom"  placeholder="Prenom du client">
         <small> <b> <?php if(!empty($error['pnom'])) echo $error['pnom']?> </b> </small> 
 
 
             <span id="missNom"></span><br>
             <label for="nom"></label>
-            <input class="nom" type="text" name="nom" id="nom" placeholder="Nom du client" required>
+            <input class="nom" type="text" name="nom" id="nom" placeholder="Nom du client">
             <small> <b> <?php if(!empty($error['nom'])) echo $error['nom']?> </b> </small> 		
 
 
                 <span id="missAdress"></span><br>
                 <label for="adress"></label>
-                <input class="adress" type="text" name="adress" id="adress" placeholder="Adresse du client" required>
+                <input class="adress" type="text" name="adress" id="adress" placeholder="Adresse du client">
                 <small> <b> <?php if(!empty($error['adess'])) echo $error['adess']?> </b> </small> 		
 
 
 
                     <span id="missEmail"></span><br>
                     <label for="email"></label>
-                    <input class="email" type="email" name="email" id="email" placeholder="Email du client" required>
+                    <input class="email" type="email" name="email" id="email" placeholder="Email du client">
                     <small> <b> <?php if(!empty($error['email'])) echo $error['email']?> </b> </small> <br>
                     <small> <b> <?php if(!empty($error['mail'])) echo $error['mail']?> </b> </small> 
 
@@ -50,30 +46,30 @@ require_once '../controller/AjoutPhysique.php';
 
                         <span id="missTelephone"></span><br>
                         <label for="telephone"></label>
-                        <input class="telephone" type="text" name="telephone" id="telephone" placeholder="Telephone  du client" maxlength="9" minlength="9" required>
+                        <input class="telephone" type="text" name="telephone" id="telephone" placeholder="Telephone  du client">
                         <small> <b> <?php if(!empty($error['tel'])) echo $error['tel']?> </b> </small> <br>
                         <small> <b> <?php if(!empty($error['optel'])) echo $error['optel']?> </b> </small> 
 
                             <div class="sexe">
                             <label for="sexe">Sexe</label>
-                            <input type="radio" name="sexe" id="sexe"  value="Homme" required> Homme
-                            <input type="radio" name="sexe" id="sexe"  value="Femme" required> Femme
-                            <input type="radio" name="sexe" id="sexe"  value="Autres" required> Autres
+                            <input type="radio" name="sexe" id="sexe"  value="Homme"> Homme
+                            <input type="radio" name="sexe" id="sexe"  value="Femme"> Femme
+                            <input type="radio" name="sexe" id="sexe"  value="Autres"> Autres
                             </div>
 
                                 <span id="missProfession"></span><br>
                                 <label for="profession"></label>
-                                <input class="profession" type="text" name="profession" id="profession" placeholder="Profession du client" required>
+                                <input class="profession" type="text" name="profession" id="profession" placeholder="Profession du client">
                                 <small> <b> <?php if(!empty($error['profession'])) echo $error['profession']?> </b> </small> 		
 
                                     <span id="missCni"></span><br>
                                     <label for="cni"></label>
-                                    <input class="cni" type="text" name="cni" id="" placeholder="CIN du client" required>
+                                    <input class="cni" type="text" name="cni" id="" placeholder="CIN du client">
                                     <small> <b> <?php if(!empty($error['cni'])) echo $error['cni']?> </b> </small> 		
 
                                         <span id="missSalaire"></span><br>
 				                                <label for="salairelab"></label>
-                                        <input class="salaire"  type="number" name="salaire" id="salaire"  placeholder="Salaire" required>
+                                        <input class="salaire"  type="number" name="salaire" id="salaire"  placeholder="Salaire">
                                         <small> <b> <?php if(!empty($error['salaire'])) echo $error['salaire']?> </b> </small> 
 
                                         <div class="idEmployeur">
@@ -99,5 +95,6 @@ require_once '../controller/AjoutPhysique.php';
                             </div>
                         </form>
                       </div>
+                      <script type="text/javascript" src="JS/Client.js"></script>
                   </body>
               </html>

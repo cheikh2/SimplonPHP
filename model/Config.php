@@ -5,9 +5,11 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
- class DatabaseConfig{
+class DatabaseConfig
+{
 
-    public static function params(){
-        return array("localhost", "Gesbanque","cheikh", "Cheikh@mbow123", );
+    public static function params()
+    {
+        return array("localhost", "Gesbanque", "cheikh", "Cheikh@mbow123",);
     }
 }

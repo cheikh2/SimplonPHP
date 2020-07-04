@@ -13,7 +13,7 @@ require_once '../model/Moral.class.php';
 ?>
     
     <div class="container">
-      <h2>Clients Morals</h2>
+      <h2>Clients Moraux</h2>
     <div class="title-underline"></div>
 
 <table class="bordered">

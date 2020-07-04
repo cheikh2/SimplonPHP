@@ -2,7 +2,7 @@
 body {
     /*background-image: url(img/nature.jpg);*/
     background-color: rgb(150, 144, 144);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     font-family: sans-serif;
     margin-top: 40px;
@@ -52,7 +52,7 @@ body {
   .numAgence {
     position: relative;
     left: 60px;
-    top: 30px;
+    top: 20px;
     line-height: 30px;
     border-radius: 6px;
     padding: 0 50px;
@@ -62,7 +62,7 @@ body {
   .numCompte {
     position: relative;
     left: 382px;
-    top: -4px;
+    top: -14px;
     line-height: 30px;
     border-radius: 6px;
     padding: 0 50px;
@@ -73,27 +73,12 @@ body {
   .rib {
     position: relative;
     left: 380px;
-    top: 25px;
+    top: 15px;
     line-height: 30px;
     border-radius: 6px;
     padding: 0 50px;
     font-size: 16px;
     color: #555;
-  }
-
-  .option {
-    position: relative;
-    left: 20px;
-    top: -13px;
-    line-height: 30px;
-    width: 333px;
-    height: 32px;
-    padding: 0 50px;
-    border-radius: 6px;
-    font-size: 16px;
-    color: #555;
-    outline: none;
-    overflow: hidden;
   }
   
   #frai{
@@ -111,8 +96,8 @@ body {
   
   #dateDebut{
     position: relative;
-    left: 20px;
-    top: -25px;
+    left: 60px;
+    top: -5px;
     line-height: 28px;
     border-radius: 6px;
     padding: 0 95px;
@@ -124,7 +109,7 @@ body {
   #dateFin{
     position: relative;
     left: 380px;
-    top: -60px;
+    top: -40px;
     line-height: 28px;
     border-radius: 6px;
     padding: 0 95px;
@@ -135,8 +120,8 @@ body {
   
   .montant{
     position: relative;
-    left: 20px;
-    top: -93px;
+    left: 60px;
+    top: -70px;
     line-height: 30px;
     border-radius: 6px;
     padding: 0 50px;
@@ -147,21 +132,21 @@ body {
   .clientT{
     position: relative;
     left: 380px;
-    top: -167px;
+    top: -147px;
     line-height: 30px;
     border-radius: 6px;
     padding: 0 50px;
-    font-size: 16px;
+    font-size: 6px;
     color: #555;
   }
 
   #typeCompte{
     position: relative;
-    left: -400px;
-    top: 55px;
+    left: -340px;
+    top: 80px;
     line-height: 40px;
     border-radius: 6px;
-    padding: 0 81px;
+    padding: 0 77px;
     height: 31px;;
     font-size: 16px;
     color: #555;
@@ -169,17 +154,25 @@ body {
 
   #frai{
     position: relative;
-    top: 140px;
-    left: 22px;
+    top: 155px;
+    left: 55px;
     color: white;
   }
   #agio{
     position: relative;
-    top: 150px;
-    left: 22px;
+    top: 165px;
+    left: 55px;
     color: white;
   }
-  
+
+  #typeC{
+    position: relative;
+    color: white;
+    left: -150px;
+    top: 53px;
+  }
+
+
   .butt{
     position: relative;
     left: 300px;

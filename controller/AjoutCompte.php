@@ -6,23 +6,22 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 require_once '../model/ManagerCompte.php';
-require_once '../model/Compte.class.php';
+require_once '../entity/Compte.class.php';
 $manager = new ManagerCompte();
 
 
-if(isset($_POST['ajouter'])) {
+if (isset($_POST['ajouter'])) {
 
-   $compte= new Compte(array(
-       'numCompte'=>trim($_POST['numCompte'],''),
-       'numAgence'=> trim($_POST['numAgence'],''),
-       'rib'=>trim($_POST['rib'],''),
-       'montant'=>trim($_POST['montant'],''),
-       'dateDebut'=>trim($_POST['dateDebut'],''),
-       'dateFin'=>trim($_POST['dateFin'],''),
-       'idType'=>trim($_POST['typeCompte'], '')
-   ));
-   
-      $manager->AddCompte($compte); //Call fucntion Add Client
-    
+    $compte = new Compte(array(
+        'numCompte' => trim($_POST['numCompte'], ''),
+        'numAgence' => trim($_POST['numAgence'], ''),
+        'rib' => trim($_POST['rib'], ''),
+        'montant' => trim($_POST['montant'], ''),
+        'dateDebut' => trim($_POST['dateDebut'], ''),
+        'dateFin' => trim($_POST['dateFin'], ''),
+        'idType' => trim($_POST['typeCompte'], '')
+    ));
 
- }
+    $manager->AddCompte($compte); //Call fucntion Add Client
+
+}

@@ -61,16 +61,6 @@ class Manager
         $tab = $req->fetch(PDO::FETCH_OBJ);
         return $tab;
     }
-    //function Principale d'auto generation de code des tables du projet
-    public function AutoCode($sql)
-    {
-        $req = $this->pdo->prepare($sql);
-        $req->execute();
-        $count = $req->fetchColumn();
-        $count += 1;
-        $result = sprintf("%04d", $count);
-        return $result;
-    }
 
     //function Principale de Recherche par Code des donnes d'un table du projet
     public function Search($sql, $data)

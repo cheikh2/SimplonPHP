@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 require_once '../model/ManagerMoral.php';
-require_once '../entity/Moral.class.php';
+require_once '../entity/Moral.php';
 $manager = new ManagerMoral();
 
 

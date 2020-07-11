@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 require_once 'Manager.php';
 require_once 'Config.php';
-require_once '../entity/Moral.class.php';
+require_once '../entity/Moral.php';
 
 class ManagerMoral extends Manager
 {

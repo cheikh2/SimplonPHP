@@ -7,6 +7,7 @@ ini_set('display_errors', 1);
 
 require_once '../model/ManagerCompte.php';
 require_once '../entity/Compte.class.php';
+
 $manager = new ManagerCompte();
 
 
